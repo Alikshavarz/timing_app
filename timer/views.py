@@ -10,7 +10,7 @@ class TimeEntryListCreateView(generics.ListCreateAPIView):
     permission_classes = [IsAuthenticated]
 
 
-class TimerViewSet(viewsets.ModelViewSet):
+class TimeEntryViewSet(viewsets.ModelViewSet):
 
     queryset = TimeEntry.objects.all()
     serializer_class = TimerSerializer
