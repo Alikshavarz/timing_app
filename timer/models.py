@@ -6,9 +6,9 @@ class Profile(models.Model):
 
 class TimeEntry(models.Model):
     title = models.CharField(max_length=100)
-    description = models.TextField()
+    description = models.TextField(blank=True)
     start_time = models.DateTimeField(auto_now_add=True)
-    duration = models.DurationField()
+    duration = models.PositiveIntegerField()
     profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
 
     def __str__(self):
