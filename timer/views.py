@@ -9,9 +9,8 @@ class TimeEntryListCreateView(generics.ListCreateAPIView):
     serializer_class = TimeEntrySerializer
     permission_classes = [IsAuthenticated]
 
-
-class TimeEntryViewSet(viewsets.ModelViewSet):
-
+# Get, Update, Delete
+class TimeEntryRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset = TimeEntry.objects.all()
-    serializer_class = TimerSerializer
+    serializer_class = TimeEntrySerializer
     permission_classes = [IsAuthenticated]
