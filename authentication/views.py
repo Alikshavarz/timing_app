@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import uuid
 from rest_framework import status
 from rest_framework.views import APIView
@@ -16,7 +15,7 @@ class AuthView(APIView):
                 'error': 'device_id is required'
             }, status=status.HTTP_400_BAD_REQUEST)
 
-        
+    
         try:
             
             user = CustomUser.objects.get(username=device_id)
@@ -51,12 +50,3 @@ class UserDetailView(APIView):
                 'error': 'Invalid token'
             }, status=status.HTTP_401_UNAUTHORIZED)
 
-=======
-from rest_framework import viewsets
-from .models import CustomUser
-from .serializers import CustomUserSerializer
-
-class CustomUserViewSet(viewsets.ModelViewSet):
-    queryset = CustomUser.objects.all()
-    serializer_class = CustomUserSerializer
->>>>>>> f73a04b7b41796fc6b0b288fdd2ede9c71ebed21
