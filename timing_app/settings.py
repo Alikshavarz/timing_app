@@ -42,8 +42,8 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     
     #local_app
-    'timer',
     'authentication',
+    'timer'
 ]
 
 REST_FRAMEWORK = {
@@ -92,7 +92,7 @@ WSGI_APPLICATION = 'timing_app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',  # 'db.sqlite3' به‌عنوان پایگاه داده
     }
 }
 
