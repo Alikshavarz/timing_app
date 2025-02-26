@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'timer',
     'authentication',
 ]
-# settings.py
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
