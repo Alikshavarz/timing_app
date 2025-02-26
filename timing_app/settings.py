@@ -43,8 +43,9 @@ INSTALLED_APPS = [
     
     #local_app
     'timer',
-    'authentication'
+    'authentication',
 ]
+# settings.py
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
@@ -62,6 +63,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+# settings.py
+AUTH_USER_MODEL = 'authentication.CustomUser'
 
 ROOT_URLCONF = 'timing_app.urls'
 

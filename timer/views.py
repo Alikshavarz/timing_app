@@ -1,6 +1,6 @@
 from rest_framework.response import Response
-from .models import TimeEntry, Profile
-from .serializers import TimeEntrySerializer, ProfileSerializer
+from .models import TimeEntry
+from .serializers import TimeEntrySerializer
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import generics 
 
