@@ -51,6 +51,12 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
 }
+# JWT settings
+SIMPLE_JWT = {
+    'USER_ID_FIELD': 'id_user',
+    'USER_ID_CLAIM': 'user_id',
+}
+
 
 
 MIDDLEWARE = [
