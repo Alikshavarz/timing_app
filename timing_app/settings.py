@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework_simplejwt',
-    
-    #local_app
+
+    # local_app
     'authentication',
     'timer'
 ]
@@ -52,8 +52,9 @@ REST_FRAMEWORK = {
     ],
 }
 # JWT settings
+from datetime import timedelta
 SIMPLE_JWT = {
-    'USER_ID_FIELD': 'id_user',
+    'USER_ID_FIELD': 'id_user',                      # فیلدی که به عنوان شناسه کاربر استفاده می‌شود
     'USER_ID_CLAIM': 'user_id',
 }
 
@@ -143,3 +144,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# settings.py

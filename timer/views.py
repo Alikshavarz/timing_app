@@ -8,14 +8,14 @@ from rest_framework import generics
 class TimeEntryListCreateView(generics.ListCreateAPIView):
     queryset = TimeEntry.objects.all()
     serializer_class = TimeEntrySerializer
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
 
 
 # Get, Update, Delete
 class TimeEntryRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset = TimeEntry.objects.all()
     serializer_class = TimeEntrySerializer
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
 
     # update
     def update(self, request, *args, **kwargs):
@@ -27,3 +27,4 @@ class TimeEntryRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
             return Response(serializer.data, status=200)
 
         return Response(serializer.errors, status=400)
+
