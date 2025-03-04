@@ -51,3 +51,10 @@ class UserDetailView(APIView):
             return Response({
                 'error': 'Invalid token'
             }, status=status.HTTP_401_UNAUTHORIZED)
+
+
+
+
+
+
+

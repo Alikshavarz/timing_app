@@ -6,3 +6,6 @@ urlpatterns = [
     path('user/', UserDetailView.as_view(), name='user-detail'),  # URL برای UserDetailView
     # path('token/refresh/', RefreshToken.as_view(), name='token_refresh')
 ]
+
+
+

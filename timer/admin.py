@@ -1,4 +1,4 @@
 from django.contrib import admin
-from timer.models import TimeEntry
-# Register your models here.
+from timer.models import Project, TimeEntry
+admin.site.register(Project)
 admin.site.register(TimeEntry)
